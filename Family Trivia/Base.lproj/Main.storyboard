@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="19455" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hb9-h0-vUT">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash-->
+        <scene sceneID="OMK-Nb-1UK">
+            <objects>
+                <viewController id="9ZW-ac-7Ne" userLabel="Splash" customClass="SplashViewController" customModule="Family_Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FJS-qR-zOZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="hCd-Zo-VoN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NTD-lE-Y6y">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="J00-nG-Zf2">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="vzo-vW-z67">
+                                <rect key="frame" x="709" y="396" width="502" height="288"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qh0-bu-xxR">
+                                        <rect key="frame" x="0.0" y="0.0" width="502" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Play"/>
+                                        <connections>
+                                            <segue destination="49e-Tb-3d3" kind="show" id="WoU-o6-wVq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWt-bt-nxE">
+                                        <rect key="frame" x="0.0" y="101" width="502" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="About"/>
+                                        <connections>
+                                            <segue destination="S7Q-xL-IDE" kind="show" id="K0P-bk-iDv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGm-Bm-Qrk">
+                                        <rect key="frame" x="0.0" y="202" width="502" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="In Memory of Alex Trebek"/>
+                                        <connections>
+                                            <action selector="onInMemoryButtonPressed:" destination="9ZW-ac-7Ne" eventType="primaryActionTriggered" id="Rri-zd-Dkr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qh0-bu-xxR" firstAttribute="width" secondItem="HWt-bt-nxE" secondAttribute="width" id="pL7-uS-M6T"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Family Trivia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuS-lH-39D">
+                                <rect key="frame" x="600.5" y="60" width="719" height="153"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="128"/>
+                                <color key="textColor" name="titleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="C1j-oZ-9JJ"/>
+                        <constraints>
+                            <constraint firstItem="VuS-lH-39D" firstAttribute="top" secondItem="C1j-oZ-9JJ" secondAttribute="top" id="0lD-5t-hAT"/>
+                            <constraint firstAttribute="bottom" secondItem="J00-nG-Zf2" secondAttribute="bottom" id="AC2-sw-6sr"/>
+                            <constraint firstItem="J00-nG-Zf2" firstAttribute="leading" secondItem="NTD-lE-Y6y" secondAttribute="leading" id="Dk5-22-Dos"/>
+                            <constraint firstItem="vzo-vW-z67" firstAttribute="centerX" secondItem="C1j-oZ-9JJ" secondAttribute="centerX" id="HSm-gm-cO9"/>
+                            <constraint firstItem="J00-nG-Zf2" firstAttribute="top" secondItem="NTD-lE-Y6y" secondAttribute="top" id="SPL-rr-ne0"/>
+                            <constraint firstItem="VuS-lH-39D" firstAttribute="centerX" secondItem="C1j-oZ-9JJ" secondAttribute="centerX" id="VeC-Ue-EMs"/>
+                            <constraint firstAttribute="trailing" secondItem="J00-nG-Zf2" secondAttribute="trailing" id="i5H-l3-2zt"/>
+                            <constraint firstItem="vzo-vW-z67" firstAttribute="centerY" secondItem="C1j-oZ-9JJ" secondAttribute="centerY" id="riQ-p6-fyO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zlg-0Z-QSS"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="btnAbout" destination="HWt-bt-nxE" id="Tir-Gp-mce"/>
+                        <outlet property="btnInMemory" destination="xGm-Bm-Qrk" id="nfW-2A-aVc"/>
+                        <outlet property="btnPlay" destination="qh0-bu-xxR" id="Mbx-ku-k62"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ITF-qB-3jl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1998" y="-1364"/>
+        </scene>
+        <!--Home Tab Bar View Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" customClass="HomeTabBarViewController" customModule="Family_Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Dv8-iP-mh2"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Qsg-fC-iLw" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="wUs-DK-iss" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3" y="100"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nac-WN-tRh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hb9-h0-vUT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M40-Cd-Yoo">
+                        <rect key="frame" x="0.0" y="60" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9ZW-ac-7Ne" kind="relationship" relationship="rootViewController" id="59o-h8-bGS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y3z-Vp-SqF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-134" y="-1364"/>
+        </scene>
+        <!--CreateGame-->
+        <scene sceneID="Ly5-gE-ta7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreateGame" id="wUs-DK-iss" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Games" id="Whl-EZ-090"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jag-28-5Cc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1678" y="444"/>
+        </scene>
+        <!--Category-->
+        <scene sceneID="eFC-lG-Rhc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Category" id="Qsg-fC-iLw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Original Games" id="0Gk-K7-oyx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CsN-zo-lWA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1687" y="-200"/>
+        </scene>
+        <!--Instructions-->
+        <scene sceneID="gjy-9w-6PW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Instructions" id="S7Q-xL-IDE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dlS-0q-goE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eic-1c-Ynx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2730" y="-426"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1920" height="1080"/>
+        <namedColor name="titleColor">
+            <color red="1" green="0.49803921568627452" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
