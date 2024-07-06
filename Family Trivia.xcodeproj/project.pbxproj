@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A136D83F112229D46697B1D3 /* Pods_Family_Trivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEB30B31B7480384B61E588 /* Pods_Family_Trivia.framework */; };
+		AB02E9212C39A54F00510A8E /* FMDB in Frameworks */ = {isa = PBXBuildFile; productRef = AB02E9202C39A54F00510A8E /* FMDB */; };
 		AB067763257170240020F3E5 /* UINavigationViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB067762257170240020F3E5 /* UINavigationViewController+Ext.swift */; };
 		AB067770257173230020F3E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB06776F257173230020F3E5 /* GoogleService-Info.plist */; };
 		AB0A5037267D00DB00105B41 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0A5036267D00DB00105B41 /* SplashScreen.storyboard */; };
@@ -92,11 +92,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		05DB0BE4FFDC9F35285AAF55 /* Pods_Family_TriviaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Family_TriviaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		16C3D342D1E8E8550BBCE3E3 /* Pods-Family Trivia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Family Trivia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Family Trivia/Pods-Family Trivia.release.xcconfig"; sourceTree = "<group>"; };
-		2F9AAABCB76FD79EC5A52797 /* Pods_Family_TriviaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Family_TriviaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4716E5279987C764965CE471 /* Pods-Family TriviaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Family TriviaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Family TriviaTests/Pods-Family TriviaTests.release.xcconfig"; sourceTree = "<group>"; };
-		798BEB0858FCD3F864BA7738 /* Pods-Family Trivia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Family Trivia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Family Trivia/Pods-Family Trivia.debug.xcconfig"; sourceTree = "<group>"; };
 		AB067762257170240020F3E5 /* UINavigationViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationViewController+Ext.swift"; sourceTree = "<group>"; };
 		AB06776F257173230020F3E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AB0A5036267D00DB00105B41 /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
@@ -171,10 +166,6 @@
 		ABCF4E4C21102B5A006E33EC /* Family Trivia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Family Trivia.entitlements"; sourceTree = "<group>"; };
 		ABCF4E4D21102B65006E33EC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		ABCF4E502110C010006E33EC /* MyGamesDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGamesDao.swift; sourceTree = "<group>"; };
-		CDEB30B31B7480384B61E588 /* Pods_Family_Trivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Family_Trivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE7B55D4A3DEA98A819DE6C1 /* Pods-Family TriviaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Family TriviaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Family TriviaTests/Pods-Family TriviaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F25456C757B97E23EBD464EF /* Pods-Family TriviaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Family TriviaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Family TriviaUITests/Pods-Family TriviaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F9DCDC05F56DDE4E75705784 /* Pods-Family TriviaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Family TriviaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Family TriviaUITests/Pods-Family TriviaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB2FAFDD25686B1200048154 /* StoreKit.framework in Frameworks */,
-				A136D83F112229D46697B1D3 /* Pods_Family_Trivia.framework in Frameworks */,
+				AB02E9212C39A54F00510A8E /* FMDB in Frameworks */,
 				ABCF4E4E21102B65006E33EC /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,9 +187,6 @@
 			children = (
 				AB2FAFDC25686B1200048154 /* StoreKit.framework */,
 				ABCF4E4D21102B65006E33EC /* CloudKit.framework */,
-				CDEB30B31B7480384B61E588 /* Pods_Family_Trivia.framework */,
-				2F9AAABCB76FD79EC5A52797 /* Pods_Family_TriviaTests.framework */,
-				05DB0BE4FFDC9F35285AAF55 /* Pods_Family_TriviaUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -208,7 +196,6 @@
 			children = (
 				AB1BB9F620FA43FD0099088C /* Family Trivia */,
 				AB1BB9F520FA43FD0099088C /* Products */,
-				EC36CFFFBAA294CAB4E04B30 /* Pods */,
 				4462F4FBFEB706E4775904A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -419,19 +406,6 @@
 			path = celebration;
 			sourceTree = "<group>";
 		};
-		EC36CFFFBAA294CAB4E04B30 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				798BEB0858FCD3F864BA7738 /* Pods-Family Trivia.debug.xcconfig */,
-				16C3D342D1E8E8550BBCE3E3 /* Pods-Family Trivia.release.xcconfig */,
-				CE7B55D4A3DEA98A819DE6C1 /* Pods-Family TriviaTests.debug.xcconfig */,
-				4716E5279987C764965CE471 /* Pods-Family TriviaTests.release.xcconfig */,
-				F9DCDC05F56DDE4E75705784 /* Pods-Family TriviaUITests.debug.xcconfig */,
-				F25456C757B97E23EBD464EF /* Pods-Family TriviaUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -439,12 +413,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB1BBA1B20FA43FE0099088C /* Build configuration list for PBXNativeTarget "Family Trivia" */;
 			buildPhases = (
-				7614ACB68585C94842556393 /* [CP] Check Pods Manifest.lock */,
 				AB1BB9F020FA43FD0099088C /* Sources */,
 				AB1BB9F120FA43FD0099088C /* Frameworks */,
 				AB1BB9F220FA43FD0099088C /* Resources */,
-				3F3D5E636C318491E59B11C8 /* [CP] Embed Pods Frameworks */,
-				ABCF4E4F2110BD89006E33EC /* Firebase */,
 				AB25394321192A6000FA1611 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -452,6 +423,9 @@
 			dependencies = (
 			);
 			name = "Family Trivia";
+			packageProductDependencies = (
+				AB02E9202C39A54F00510A8E /* FMDB */,
+			);
 			productName = "Family Trivia";
 			productReference = AB1BB9F420FA43FD0099088C /* Family Trivia.app */;
 			productType = "com.apple.product-type.application";
@@ -489,6 +463,9 @@
 				Base,
 			);
 			mainGroup = AB1BB9EB20FA43FD0099088C;
+			packageReferences = (
+				AB02E91F2C39A54F00510A8E /* XCRemoteSwiftPackageReference "fmdb" */,
+			);
 			productRefGroup = AB1BB9F520FA43FD0099088C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -527,60 +504,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3F3D5E636C318491E59B11C8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Family Trivia/Pods-Family Trivia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Family Trivia/Pods-Family Trivia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Family Trivia/Pods-Family Trivia-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7614ACB68585C94842556393 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Family Trivia-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ABCF4E4F2110BD89006E33EC /* Firebase */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
-				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)\n",
-			);
-			name = Firebase;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB1BB9F020FA43FD0099088C /* Sources */ = {
@@ -766,7 +689,6 @@
 		};
 		AB1BBA1C20FA43FE0099088C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 798BEB0858FCD3F864BA7738 /* Pods-Family Trivia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Launch Image";
@@ -798,7 +720,6 @@
 		};
 		AB1BBA1D20FA43FE0099088C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16C3D342D1E8E8550BBCE3E3 /* Pods-Family Trivia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Launch Image";
@@ -848,6 +769,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB02E91F2C39A54F00510A8E /* XCRemoteSwiftPackageReference "fmdb" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ccgus/fmdb";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.12;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB02E9202C39A54F00510A8E /* FMDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB02E91F2C39A54F00510A8E /* XCRemoteSwiftPackageReference "fmdb" */;
+			productName = FMDB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AB1BB9EC20FA43FD0099088C /* Project object */;
 }
