@@ -145,7 +145,7 @@ class TriviaDao: NSObject {
         }
         
         do {
-            let rs = try database.executeQuery("select * from Games where flags != 66", values: nil)
+            let rs = try database.executeQuery("select * from Games where flags != 66 order by gameId desc", values: nil)
             while rs.next() {
                 let model = boardFrom(rs)
                 results.append(model)
